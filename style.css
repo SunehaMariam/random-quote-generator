@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f9;
+    color: #333;
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: gradientAnimation 10s infinite;
+    max-width: 500px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #a0e0ff, #b9c7ff, #c7f7fc);
+        /* Light sky blue, soft lavender, light cyan */
+    }
+
+    33% {
+        background: linear-gradient(45deg, #ffb3d9, #fff2b3, #b3ffff);
+        /* Soft pink, pale yellow, minty cyan */
+    }
+
+    66% {
+        background: linear-gradient(45deg, #ffccff, #d4f2d4, #a9d1ff);
+        /* Light purple, pale green, light blue */
+    }
+
+    100% {
+        background: linear-gradient(45deg, #ff9999, #b3ffb3, #b3c6ff);
+        /* Soft red, pastel green, pale periwinkle blue */
+    }
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: rgb(2, 172, 2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background: green;
+}
